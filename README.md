@@ -31,8 +31,8 @@ and dropping queue mechanism.
 file.
 * STEP 16: At the particular time call the finish procedure. 
 * STEP 17: Stop the program.
-
-#Create a simulator object 
+##  CODE
+```
 set ns [new Simulator] 
 #Open the nam trace file 
 set nf [open out.nam w] 
@@ -75,3 +75,9 @@ $ns at 4.5 "$cbr0 stop"
 #Call the finish procedure after 5 seconds of simulation time 
 $ns at 5.0 "finish" 
 $ns run
+```
+## OUTPUT
+![510073671-98fc6529-9d39-480f-83c1-ee79fdfad75f](https://github.com/user-attachments/assets/a5e3e186-4b5e-4afd-9fd7-e6a5d674f59d)
+
+## RESULT 
+The simulation successfully demonstrates a bus topology setup and data transmission using NS2.
